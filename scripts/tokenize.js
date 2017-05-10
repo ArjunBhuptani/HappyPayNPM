@@ -1,6 +1,29 @@
-var tokenize = function(key, secret) {
-	console.log("tokenize")
-	console.log(key+secret)
+var request = require('request');
+
+var tokenize = function(key, secret, token, callback) {
+
+	var options = {
+	  url: 'http://localhost:8080/tokenize/',
+	  method: 'POST',
+	  json: true,
+	  body: {
+	  	"token": token,
+	  	"key": key,
+	  	"secret": secret
+	  },
+	  headers: {
+	    'Authentication': secret
+	  }
+	};
+
+	request(options, function(error, response, body) {
+		token = body.token;
+		if(!error && response.statusCode == 200) {
+			console.log("Succesfully tokenized!")
+			token.cardnumber = "****************";
+			callback(token);
+		} else console.log(error);
+	})
 }
 
 module.exports = tokenize;
