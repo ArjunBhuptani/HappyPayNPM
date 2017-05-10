@@ -1,0 +1,27 @@
+{
+  "name": "happypay",
+  "version": "0.1.0",
+  "description": "Happypay is a payment api for Ethereum applications",
+  "main": "happypay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArjunBhuptani/HappyPayNPM.git"
+  },
+  "keywords": [
+    "payment",
+    "gateway",
+    "Ethereum",
+    "web3",
+    "processor",
+    "blockchain"
+  ],
+  "author": "Arjun Bhuptani <arjunbhuptani@gmail.com> (http://happycha.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArjunBhuptani/HappyPayNPM/issues"
+  },
+  "homepage": "https://github.com/ArjunBhuptani/HappyPayNPM#readme"
+}
