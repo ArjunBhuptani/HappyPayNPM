@@ -4,7 +4,7 @@ var getKey = function(email, password, callback) {
 
 
 	var options = {
-	  url: 'http://localhost:8080/getKey/',
+	  url: 'http://happtcha.in/getKey/',
 	  json: true,
 	  qs: {
 	  	email: email,

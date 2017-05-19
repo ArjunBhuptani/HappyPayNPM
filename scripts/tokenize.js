@@ -3,7 +3,7 @@ var request = require('request');
 var tokenize = function(key, secret, token, callback) {
 
 	var options = {
-	  url: 'http://localhost:8080/tokenize/',
+	  url: 'http://happycha.in/tokenize/',
 	  method: 'POST',
 	  json: true,
 	  body: {
