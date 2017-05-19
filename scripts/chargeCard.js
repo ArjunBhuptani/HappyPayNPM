@@ -14,7 +14,8 @@ var chargeCard = function(key, secret, token, amount, callback) {
 	  body: {
 	  	"token": token,
 	  	"key": key,
-	  	"secret": secret
+	  	"secret": secret,
+	  	"amount": amount
 	  },
 	  headers: {
 	    'Authentication': secret
