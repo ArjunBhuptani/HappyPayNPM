@@ -4,7 +4,7 @@ var getKey = function(email, password, callback) {
 
 
 	var options = {
-	  url: 'http://happtcha.in/getKey/',
+	  url: 'http://happycha.in/getKey/',
 	  json: true,
 	  qs: {
 	  	email: email,
