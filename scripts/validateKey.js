@@ -3,7 +3,7 @@ var request = require('request');
 var validateKey = function(key, secret, callback) {
 
 	var options = {
-		url: 'http://happycha.in/validateKey/',
+		url: 'http://api.happycha.in/validateKey/',
 		method: 'POST',
 		json: true,
 		body: {

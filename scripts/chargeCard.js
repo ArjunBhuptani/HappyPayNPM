@@ -8,7 +8,7 @@ var chargeCard = function(key, secret, token, amount, callback) {
 	}
 
 	var options = {
-	  url: 'http://happycha.in/chargeCard/',
+	  url: 'http://api.happycha.in/chargeCard/',
 	  method: 'POST',
 	  json: true,
 	  body: {

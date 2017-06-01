@@ -3,7 +3,7 @@ var request = require('request');
 var tokenize = function(key, secret, token, callback) {
 
 	var options = {
-	  url: 'http://happycha.in/tokenize/',
+	  url: 'http://api.happycha.in/tokenize/',
 	  method: 'POST',
 	  json: true,
 	  body: {
@@ -19,7 +19,6 @@ var tokenize = function(key, secret, token, callback) {
 	request(options, function(error, response, body) {
 		token = body.token;
 		if(!error && response.statusCode == 200) {
-			console.log("Succesfully tokenized!")
 			token.cardnumber = "****************";
 			callback(token);
 		} else console.log(error);
